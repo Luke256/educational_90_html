@@ -85,7 +85,7 @@ for task in files:
         # 解説・ソースコード
         try:
             with open("kyopro_educational_90/sol/{name}.cpp".format(name=name), encoding = "shift_jis") as code:
-                sample_code=code.read()
+                sample_code=code.read().replace("<","&lt;")
 
         # まだ解説が公開されていなければスルー
         except FileNotFoundError:
