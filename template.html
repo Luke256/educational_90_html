@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>競プロ典型90問一覧 - {name}</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../uikit-3.6.5/css/uikit.min.css" />
+        <script src="../uikit-3.6.5/js/uikit.min.js"></script>
+        <script src="../uikit-3.6.5/js/uikit-icons.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    </head>
+    <body>
+        <div class="uk-card uk-card-default uk-margin-top uk-margin-large-right uk-margin-large-left uk-padding">
+            <h1 class="uk-heading-divider uk-padding uk-padding-remove-bottom">{name}</h1>
+            <h2 class="uk-heading-bullet uk-padding-small">問題</h2>
+            <center><img data-src="../kyopro_educational_90/problem/{name}.jpg" width="1000%" alt="" uk-img></center>
+            <h2 class="uk-heading-bullet uk-padding-small">入力形式</h2>
+            <div class="uk-card uk-card-default uk-padding-small uk-margin-left uk-margin-right">
+                {input_shape}
+            </div>
+            {sample}
+            <h2 class="uk-heading-bullet uk-padding-small">解説</h2>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title uk-margin-left uk-margin-right" href="#">解説を開く</a>
+                    <div class="uk-accordion-content">
+                        <h3 class="uk-heading-bullet uk-padding-small">解説</h3>
+                        <center><img data-src="../kyopro_educational_90/editorial/{name}.jpg" width="1000%" alt="" uk-img></center>
+                        <h3 class="uk-heading-bullet uk-padding-small">コード例</h3>
+                        <div class="uk-card uk-card-default uk-margin-left uk-margin-right">
+                            <pre><code class="prettyprint lang-cpp" id="code-5">{sample_code}</code></pre>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

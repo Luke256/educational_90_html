@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>競プロ典型90問一覧</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="uikit-3.6.5/css/uikit.min.css" />
+        <script src="uikit-3.6.5/js/uikit.min.js"></script>
+        <script src="uikit-3.6.5/js/uikit-icons.min.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/store-js@2.0.4/dist/store.legacy.min.js'></script>
+        <script lang="javascript">
+            window.onload=function(){
+                var table=document.getElementById("table");
+                for(var i=1; i<=90; ++i){
+                    var tr=document.createElement("tr");
+                    var td=document.createElement("td");
+                    var link=document.createElement("a");
+
+                    link.href="tasks/"+("000"+i).slice(-3)+".html";
+                    link.textContent=("000"+i).slice(-3);
+                    td.appendChild(link);
+                    tr.appendChild(td);
+                    console.log(tr);
+                    console.log(table);
+                    table.appendChild(tr);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="uk-card uk-card-default uk-padding uk-margin-large-left uk-margin-large-right uk-margin-top">
+            <table class="uk-table uk-table-divider" id=table>
+            </table>
+        </div>
+    </body>
+</html>
